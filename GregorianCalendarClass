@@ -7,5 +7,14 @@ public class Main {
         System.out.println(calendar.get(Calendar.YEAR)); // yıl
         System.out.println(calendar.get(Calendar.DATE)); // ayın kaçıncı günü
         System.out.println(calendar.get(Calendar.MINUTE)); // dakka
+        
+        ////setTimeInMillis method's
+        
+           Calendar cal = Calendar.getInstance();
+ 
+	        cal.setTimeInMillis(1234567898765L);
+
+	        // print the new time
+	        System.out.println("After setting Time:  " + cal.getTime());
     }
 }
